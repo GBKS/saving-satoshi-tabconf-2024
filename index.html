@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Bitcoin Design BTC Prague 2023 booth slides</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="css/monokai.css">
+
+		<style>
+			#fullscreen {
+				position: fixed;
+				z-index: 1337;
+				top: 10px;
+				left: 10px;
+				opacity: 0;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="images/saving-satoshi.jpg"></section>
+				<section data-background-image="images/code-your-way.jpg"></section>
+				<section data-background-image="images/lesson-1-intro-1.jpg"></section>
+				<section data-background-image="images/holocat.jpg"></section>
+				<section data-background-image="images/script-editor.jpg"></section>
+				<section data-background-image="images/chapter-1-challenge-1.jpg"></section>
+				<section data-background-image="images/chapter-2-pool-operators.jpg"></section>
+				<section data-background-image="images/chapter-6-challenge-1.jpg"></section>
+			</div>
+		</div>
+
+		<button id="fullscreen">Full screen</button>
+
+		<script src="js/reveal.js"></script>
+		<script src="js/notes.js"></script>
+		<script src="js/markdown.js"></script>
+		<script src="js/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				autoSlide: 30000,
+  				loop: true,
+  				progress: false,
+  				touch: true,
+  				controls: false,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+
+			document.getElementById('fullscreen').addEventListener('click', function() {
+				document.documentElement.requestFullscreen();
+			})
+		</script>
+	</body>
+</html>
